@@ -1,0 +1,72 @@
+/* Variáveis CSS  */
+:root {
+    --color-light: #f4f4f4;
+    --color-orange: #ff6600;
+    --color-orange-alpha: rgba(255, 102, 0, .15);
+    --color-dark: #111;
+    --color-black: #000;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: var(--color-black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* Seção Hero  */
+.hero {
+    width: 100%;
+    height: 100dvh;
+    background-image: url(../images/motos/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.header-hero {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: var(--spacing-lg);
+
+    h1 {
+        font-size: 38px;
+        color: var(--color-light);
+
+        span {
+            color: var(--color-orange);
+        }
+    }
+}
+
+.header-menu {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.header-menu a {
+    font-weight: 700;
+    transition: color .7s;
+
+    &:hover {
+        color: var(--color-orange);
+    }
+}
